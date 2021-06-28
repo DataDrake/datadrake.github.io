@@ -1,0 +1,127 @@
+@font-face {
+  font-family: 'datadrake-icons';
+  src:
+    url('../fonts/datadrake-icons.ttf?qy0o1t') format('truetype'),
+    url('../fonts/datadrake-icons.woff?qy0o1t') format('woff'),
+    url('../fonts/datadrake-icons.svg?qy0o1t#datadrake-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'datadrake-icons' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1.25rem;
+  display: inline-block;
+  vertical-align: initial;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon.new:before {
+  content: "\f067";
+}
+.icon.question:before {
+  content: "\f128";
+}
+.icon.user:before {
+  content: "\f007";
+}
+.icon.video:before {
+  content: "\f008";
+}
+.icon.home:before {
+  content: "\f015";
+}
+.icon.photo:before {
+  content: "\f03e";
+}
+.icon.pencil:before {
+  content: "\f040";
+}
+.icon.forward:before {
+  content: "\f054";
+}
+.icon.bad:before {
+  content: "\f057";
+}
+.icon.good:before {
+  content: "\f058";
+}
+.icon.question:before {
+  content: "\f059";
+}
+.icon.info:before {
+  content: "\f05a";
+}
+.icon.warn:before {
+  content: "\f06a";
+}
+.icon.construction:before {
+  content: "\f071";
+}
+.icon.top:before {
+  content: "\f077";
+}
+.icon.social:before {
+  content: "\f086";
+}
+.icon.twitter:before {
+  content: "\f099";
+}
+.icon.github:before {
+  content: "\f09b";
+}
+.icon.news:before {
+  content: "\f0a1";
+}
+.icon.link:before {
+  content: "\f0c1";
+}
+.icon.flask:before {
+  content: "\f0c3";
+}
+.icon.linkedin:before {
+  content: "\f0e1";
+}
+.icon.bolt:before {
+  content: "\f0e7";
+}
+.icon.coffee:before {
+  content: "\f0f4";
+}
+.icon.terminal:before {
+  content: "\f120";
+}
+.icon.podcast:before {
+  content: "\f130";
+}
+.icon.rss:before {
+  content: "\f143";
+}
+.icon.compass:before {
+  content: "\f14e";
+}
+.icon.linux:before {
+  content: "\f17c";
+}
+.icon.history:before {
+  content: "\f1da";
+}
+.icon.twitch:before {
+  content: "\f1e8";
+}
+.icon.reddit:before {
+  content: "\f281";
+}
+.icon.microchip:before {
+  content: "\f2db";
+}
