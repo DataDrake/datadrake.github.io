@@ -1,0 +1,12 @@
+<nav>
+    <div class="icons">
+    {{ range $name, $url := .Site.Data.social }}
+        <a href="{{ $url }}">
+            <i class="icon {{ $name }}"></i>
+        </a> 
+    {{ end }}
+    </div>
+    <a id="return" href="#top">
+        <i class="icon top"></i>
+    </a>
+</nav>

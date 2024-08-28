@@ -1,0 +1,7 @@
+{{- $sheet := (printf "sass/%s.sass" .) }}
+{{- $sass := resources.Get $sheet }}
+{{- if $sass }}
+{{- with toCSS $sass | minify }}
+<link rel="stylesheet" href="{{ .RelPermalink }}">
+{{- end }}
+{{- end }}

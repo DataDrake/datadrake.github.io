@@ -1,0 +1,22 @@
+baseURL: 'https://www.datadrake.com'
+languageCode: 'en-us'
+title: 'DataDrake.com'
+theme:
+  - console
+
+params:
+  copyright:
+    start: 2017
+    name: Beatrice T. Meyers
+    email: root@datadrake.com
+
+markup:
+  goldmark:
+    extensions:
+      table: true
+    parser:
+      attribute:
+        block: true
+        title: true
+    renderer:
+        unsafe: true

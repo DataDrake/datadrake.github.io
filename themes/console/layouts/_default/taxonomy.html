@@ -1,0 +1,16 @@
+{{ define "main" }}
+    {{ $name := strings.ToLower .Page.Title }}
+    {{ $tag := index .Page.Site.Data.tags $name }}
+    <h1>{{ $tag.title }}</h1>
+    <div class="tags">
+        {{ range .Site.Taxonomies.tags }}
+        <a class='btn' href="{{ .Page.Permalink }}">
+            {{ $name := strings.ToLower .Page.Title }}
+            {{ $tag := index .Page.Site.Data.tags $name }}
+            <i class="icon {{ $tag.icon }}"></i>
+            {{ $tag.title }}
+        </a>
+        {{ end }}
+    </div>
+    {{ partial "posts.html" .Pages }}
+{{ end }}

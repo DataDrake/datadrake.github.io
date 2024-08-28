@@ -1,0 +1,28 @@
+.btn
+    margin: $char-width
+    padding: $char-width
+    color: $footer-btn-fg
+    background-color: $footer-btn-bg
+    text-decoration: none
+    *
+        color: $footer-btn-fg
+        background-color: $footer-btn-bg
+
+.bar
+    display: flex
+    flex-flow: row wrap
+    justify-content: center
+    margin: $char-width
+
+    .btn
+        width: $footer-btn-width
+
+        *
+            color: $footer-btn-fg
+            background-color: $footer-btn-bg
+    .icon
+        margin: 0 $char-width
+
+@media screen and (max-width: $mobile-max)
+    .bar .btn
+        width: $footer-btn-width - 2*$char-width

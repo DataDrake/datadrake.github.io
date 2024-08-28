@@ -1,0 +1,16 @@
+{{ define "main" }}
+    <div class="title">
+        <h1>{{ .Title }}</h1>
+    </div>
+    <article class="summary {{ .Params.color }}">
+        <div class="label">
+            {{ $date := .Date | time.Format "2006-01-02" }}
+            <b class="date">{{ $date }}</b>
+            <b class="author">{{ .Params.author }}</b>
+        </div>
+        <div class="text">
+            {{ .Content }}
+        </div>
+        {{ partial "tags.html" . }}
+    </article>
+{{ end }}

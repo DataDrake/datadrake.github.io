@@ -1,0 +1,20 @@
+/* navigation */
+
+nav
+    display: flex
+    justify-content: space-between
+
+    a
+        padding: $char-width 2*$char-width
+        display: flex
+
+    .icons
+        display: flex
+
+    .title
+        color: $nav-fg
+        margin-left: $char-width
+
+@media screen and (max-width: $mobile-max)
+    #top .title
+        display: none

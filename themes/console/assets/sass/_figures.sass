@@ -1,0 +1,25 @@
+/* figures */
+
+blockquote
+    margin: $char-width
+    border-left: $border-size solid
+    padding: $char-width
+    background-color: $quote-bg
+
+caption, figcaption
+    text-align: center
+
+cite
+    font-style: italic
+    margin-left: $cite-indent
+
+    ::before
+        content: "~ "
+        font-weight: bold
+
+pre code
+    display: block
+    padding: $char-width
+    margin: $char-width
+    border: $border-size $code-border dashed
+    background-color: $code-bg

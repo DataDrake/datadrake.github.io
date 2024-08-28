@@ -1,0 +1,18 @@
+announcement:
+  title: Announcements
+  icon: announcement
+coffee:
+  title: I Need More Coffee
+  icon: coffee
+meditative:
+  title: Meditative Musings
+  icon: meditative
+nostalgia:
+  title: Nostalgia Trip
+  icon: nostalgia
+os:
+  title: Building an RTOS
+  icon: os
+rant:
+  title: Rants and Ravings
+  icon: rant

@@ -1,0 +1,56 @@
+/* articles */
+
+.tags
+    display: flex
+    justify-content: center
+    margin-top: $char-height
+
+    a
+        display: flex
+
+    .icon
+        background: $bg
+        margin-right: $char-width
+
+article.summary, article.full
+    border: $border-size solid $fg
+    margin-bottom: 2*$char-height
+
+    .label
+        display: flex
+        border-bottom: $border-size solid $fg
+        vertical-align: middle
+
+        .date
+            color: $bg
+            background-color: $fg
+            padding: $char-width
+            text-align: center
+
+        .title, .author
+            display: flex
+            justify-content: space-between
+            flex: 1
+            padding: $char-width
+            font-weight: bold
+            text-decoration: none
+
+    .abstract, .text
+        padding: $char-height $char-height 0
+
+    .tags
+        justify-content: end
+    ul,ol,dl
+        margin-bottom: $char-height
+
+article.red
+    border-color: $red
+    .label
+        border-color: $red
+        .date
+            color: $fg
+            background-color: $red
+
+@media screen and (max-width: $mobile-max)
+    article.summary, article.full
+        margin: $char-height 0

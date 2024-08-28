@@ -1,0 +1,13 @@
+<article class="summary {{ .Params.color }}">
+    <div class="label">
+        <b class="date">{{ .Date.Day }}</b>
+        <a class="title" href="{{ .RelPermalink }}">
+            <span>{{ .LinkTitle }}</span>
+            <i class="icon forward"></i>
+        </a>
+    </div>
+    <div class="abstract">
+        {{ .Summary }}
+    </div>
+    {{ partial "tags.html" . }}
+</article>

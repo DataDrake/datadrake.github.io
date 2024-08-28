@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="{{ or site.Language.LanguageCode }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    {{ if .IsHome }}<title>{{ site.Title }} - Home</title>{{ end }}
+    {{ if not .IsHome }}<title>{{ site.Title }}{{ if .Section }} - {{ strings.Title .Section }}{{ end }}{{ if .Title }} - {{ .Title }}{{ end }}</title>{{ end }}
+    {{ partial "css.html" "base" }}
+    {{ block "css" . }}{{ end }}
+</head>
+<body>
+    <a id="top"></a>
+    <header>
+        {{ partial "header.html" . }}
+    </header>
+    <main>
+        {{ block "main" . }}{{ end }}
+        {{ partial "copy.html" . }}
+    </main>
+    <footer>
+        {{ partial "footer.html" . }}
+    </footer>
+</body>
+</html>

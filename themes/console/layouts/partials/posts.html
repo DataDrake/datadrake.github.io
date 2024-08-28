@@ -1,0 +1,8 @@
+<div class="posts">
+    {{ range .GroupByDate "January 2006" }}
+    <h4>{{ .Key }}</h4>
+    {{ range .Pages }}
+        {{ partial "summary.html" . }}
+    {{ end }}
+    {{ end }}
+</div>

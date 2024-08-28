@@ -1,0 +1,42 @@
+/* page */
+
+header, main, footer
+    padding: 0 2*$char-width
+
+    > *
+        max-width: $max-body
+        margin: 0 auto
+
+header,footer
+    background: $nav-bg
+    color: $nav-fg
+
+    .icon
+        background: $nav-fg
+
+header, section
+    margin-bottom: 2*$char-height
+
+header
+    position: sticky
+    top: 0
+    left: 0
+
+main
+    max-width: $max-body
+    margin: 0 auto
+
+section
+    background: $bg3
+    article
+        padding: $char-height 2*$char-width
+
+
+.copy
+    margin-bottom: 4*$char-height
+
+footer
+    position: fixed
+    bottom: 0
+    left: 0
+    width: 100%

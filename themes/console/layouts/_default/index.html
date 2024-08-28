@@ -1,0 +1,15 @@
+{{ define "css" }}
+    {{ partial "css.html" "index" }}
+{{ end }}
+{{ define "main" }}
+    <section>
+        <article>
+            {{ .Content }}
+        </article>
+    </section>
+    <div class="posts">
+        <h1> Recent Posts</h1>
+        {{ $pages := .Site.RegularPages.Limit 5 }}
+        {{ partial "posts.html" $pages }}
+    </div>
+{{ end }}

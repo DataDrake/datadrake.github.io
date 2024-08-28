@@ -1,0 +1,21 @@
+{{ define "main" }}
+    <h1>Blog</h1>
+    <div class="tags">
+        {{ range .Site.Taxonomies.tags }}
+        <a class='btn' href="{{ .Page.Permalink }}">
+            {{ $name := strings.ToLower .Page.Title }}
+            {{ $tag := index .Page.Site.Data.tags $name }}
+            <i class="icon {{ $tag.icon }}"></i>
+            {{ $tag.title }}
+        </a>
+        {{ end }}
+    </div>
+    <div class="posts">
+        {{ range .Pages.GroupByDate "January 2006" }}
+        <h4>{{ .Key }}</h4>
+        {{ range .Pages }}
+            {{ partial "summary.html" . }}
+        {{ end }}
+        {{ end }}
+    </div>
+{{ end }}
